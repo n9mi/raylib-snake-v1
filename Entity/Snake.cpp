@@ -125,6 +125,19 @@ namespace RetroSnake {
         return false;
     }
 
+    bool Snake::checkifHeadBodyCollision()
+    {   
+        for (int i = 1; i < m_body.size(); i++)
+        {
+            if ((m_body[0].x == m_body[i].x) && (m_body[0].y == m_body[i].y))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     void Snake::reset()
     {
         m_body.erase(m_body.begin() + m_initLength, m_body.end());

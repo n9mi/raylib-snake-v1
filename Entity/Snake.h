@@ -30,6 +30,7 @@ namespace RetroSnake {
             int getFrameInterval();
             Vector2 getHeadPosition();
             bool checkIfPositionOccupiedByHeadOrBody(const Vector2 &);
+            bool checkifHeadBodyCollision();
             void growTailByOne();
             void reset();
     };

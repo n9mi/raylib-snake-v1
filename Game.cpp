@@ -99,7 +99,7 @@ namespace RetroSnake
                     m_food->setPosition(newFoodPos);
                     m_snake->growTailByOne();
                 }
-                if (checkSnakeWallCollision())
+                if (checkSnakeWallCollision() || m_snake->checkifHeadBodyCollision())
                 {
                     m_score = 0;
                     m_isPlay = false;

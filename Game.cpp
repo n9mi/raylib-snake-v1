@@ -24,6 +24,9 @@ namespace RetroSnake
     {
         delete m_food;
         delete m_snake;
+
+        m_food = nullptr;
+        m_snake = nullptr;
     }
 
     void Game::updateSnakePerFrame()
